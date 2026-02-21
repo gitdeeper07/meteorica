@@ -1,0 +1,34 @@
+# METEORICA Field Deployment Mode
+# Reduced-parameter configuration for field use
+
+emi:
+  weights:
+    mcc: 0.40  # Increased weight for mineralogy
+    smg: 0.20
+    twi: 0.25  # Increased for field weathering assessment
+    iaf: 0.15  # Reduced (requires lab analysis)
+    atp: 0.00  # Not available in field
+    pbdr: 0.00 # Not available in field
+    cnea: 0.00 # Not available in field
+
+parameters:
+  mcc:
+    use_portable_methods: true
+    use_visual_inspection: true
+  
+  twi:
+    use_hand_lens: true
+    use_magnet: true
+  
+  smg:
+    use_visual_shock_indicators: true
+
+field_equipment:
+  hand_lens: "10x"
+  magnet: "rare-earth"
+  hardness_kit: true
+  uv_lamp: true
+
+output:
+  format: "quick_report"
+  include_photos: true

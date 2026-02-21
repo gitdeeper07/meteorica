@@ -1,0 +1,38 @@
+[run]
+source = meteorica
+omit =
+    */tests/*
+    */test_*
+    *__pycache__*
+    *.pyc
+    */setup.py
+    */docs/*
+    */notebooks/*
+    */scripts/*
+    */.eggs/*
+    *.egg-info/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    if __name__ == .__main__.:
+    raise AssertionError
+    raise NotImplementedError
+    return NotImplemented
+    pass
+    except ImportError:
+    except ImportError as e:
+    except Exception:
+    if typing.TYPE_CHECKING:
+    @abstractmethod
+
+ignore_errors = True
+precision = 2
+
+[html]
+directory = coverage_html
+
+[xml]
+output = coverage.xml

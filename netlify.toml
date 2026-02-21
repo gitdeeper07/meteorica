@@ -1,0 +1,81 @@
+# Netlify configuration for METEORICA dashboard
+
+[build]
+  publish = "."
+  command = "echo 'Static site deployment'"
+
+[build.environment]
+  PYTHON_VERSION = "3.10"
+
+# Redirects
+[[redirects]]
+  from = "/api/*"
+  to = "https://meteorica-api.onrender.com/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/docs/*"
+  to = "https://meteorica-science.netlify.app/documentation/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/paper"
+  to = "https://doi.org/10.14293/METEORICA.2026.001"
+  status = 301
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/gitdeeper07/meteorica"
+  status = 301
+
+[[redirects]]
+  from = "/gitlab"
+  to = "https://gitlab.com/gitdeeper07/meteorica"
+  status = 301
+
+[[redirects]]
+  from = "/pypi"
+  to = "https://pypi.org/project/meteorica"
+  status = 301
+
+[[redirects]]
+  from = "/huggingface"
+  to = "https://huggingface.co/spaces/gitdeeper07/meteorica"
+  status = 301
+
+[[redirects]]
+  from = "/zenodo"
+  to = "https://doi.org/10.5281/zenodo.meteorica.2026"
+  status = 301
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/dashboard/index.html"
+  status = 200
+
+# Headers for security and caching
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# Plugin configuration
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"

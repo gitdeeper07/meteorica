@@ -1,0 +1,36 @@
+{
+  "id": "SAMPLE_001",
+  "name": "Test H Chondrite",
+  "collection": "ANSMET",
+  "repository": "NASA-JSC",
+  "recovery_date": "2020-12-15",
+  "recovery_location": {
+    "latitude": -77.5,
+    "longitude": 160.0,
+    "region": "Antarctica"
+  },
+  "mass_g": 125.5,
+  "analyses": {
+    "epma": {
+      "olivine_fa": 18.5,
+      "pyroxene_fs": 16.5,
+      "plagioclase_an": 12.3
+    },
+    "oxygen_isotopes": {
+      "d18O": 4.2,
+      "d17O": 2.8,
+      "Δ17O": 0.75
+    },
+    "trace_elements": {
+      "ni": 1.2,
+      "co": 0.8,
+      "ir": 0.5
+    }
+  },
+  "classification": {
+    "group": "H",
+    "type": 5,
+    "shock_stage": "S3",
+    "weathering_grade": "W1"
+  }
+}

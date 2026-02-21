@@ -1,0 +1,64 @@
+# METEORICA Default Configuration
+
+emi:
+  weights:
+    mcc: 0.26
+    smg: 0.19
+    twi: 0.18
+    iaf: 0.17
+    atp: 0.10
+    pbdr: 0.06
+    cnea: 0.04
+  boundary_zone_threshold: 0.40
+  ungrouped_threshold: 0.80
+
+parameters:
+  mcc:
+    max_distance: 5.0
+    use_mahalanobis: true
+  
+  smg:
+    max_pressure_gpa: 90.0
+  
+  twi:
+    weathering_rate_model: "default"
+    calibration_dataset: "156_specimens"
+    age_formula: "12,400 * ln(1 + 3.7 * TWI)"
+  
+  iaf:
+    isotope_dimensions: 7
+    outlier_threshold: 0.30
+  
+  atp:
+    heat_transfer_coeff: 0.15
+    emissivity: 0.88
+    precision_c: 180
+  
+  pbdr:
+    ci_normalization: true
+  
+  cnea:
+    production_rate_model: "nishiizumi_2007"
+    cosmic_ray_modulation: true
+    concordia_display: true
+
+cnn:
+  model_checkpoint: "models/meteorica_cnn_v1.pt"
+  spectral_range_um: [0.35, 2.5]
+  normalization_wavelength_um: 0.55
+  confidence_threshold: 0.70
+  n_classes: 42
+
+dashboard:
+  title: "METEORICA - Celestial Messengers"
+  theme: "dark"
+  refresh_interval: 60
+
+repositories:
+  - name: "MetBull"
+    url: "https://www.lpi.usra.edu/meteor/metbull.php"
+    sync_enabled: true
+  
+  - name: "ANSMET"
+    url: "https://ansmet.nasa.gov"
+    sync_enabled: false

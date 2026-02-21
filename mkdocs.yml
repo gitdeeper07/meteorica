@@ -1,0 +1,81 @@
+site_name: METEORICA
+site_description: Celestial Messengers - Physico-Chemical Framework for Extraterrestrial Materials
+site_author: Samir Baladi
+site_url: https://meteorica-science.netlify.app
+
+repo_name: gitdeeper4/meteorica
+repo_url: https://gitlab.com/gitdeeper4/meteorica
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [meteorica]
+          options:
+            show_source: true
+            show_root_heading: true
+            show_category_heading: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quickstart.md
+  - Parameters:
+      - Overview: parameters/index.md
+      - MCC: parameters/mcc.md
+      - SMG: parameters/smg.md
+      - TWI: parameters/twi.md
+      - IAF: parameters/iaf.md
+      - ATP: parameters/atp.md
+      - PBDR: parameters/pbdr.md
+      - CNEA: parameters/cnea.md
+  - Case Studies:
+      - Chelyabinsk: case_studies/chelyabinsk.md
+      - Widmanstätten: case_studies/widmanstatten.md
+      - Antarctic Field: case_studies/antarctic_field.md
+      - Presolar Grains: case_studies/presolar_grains.md
+  - API Reference: api/
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+  - Authors: authors.md

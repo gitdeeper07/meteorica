@@ -1,0 +1,30 @@
+{
+  "report_type": "daily",
+  "date": "2026-02-20",
+  "generated": "2026-02-20T23:59:59",
+  "statistics": {
+    "new_classifications": 12,
+    "fireball_events": 3,
+    "database_updates": 5,
+    "active_alerts": 2
+  },
+  "classifications": [
+    {"id": "M001", "name": "Sample-001", "group": "H", "emi": 0.92, "confidence": 0.95},
+    {"id": "M002", "name": "Sample-002", "group": "L", "emi": 0.88, "confidence": 0.92},
+    {"id": "M003", "name": "Sample-003", "group": "LL", "emi": 0.91, "confidence": 0.94}
+  ],
+  "fireballs": [
+    {"time": "2026-02-20T10:30", "location": "Sahara", "velocity": 18.6, "altitude": 23, "status": "tracked"},
+    {"time": "2026-02-20T14:15", "location": "Atacama", "velocity": 16.2, "altitude": 31, "status": "tracked"},
+    {"time": "2026-02-20T22:45", "location": "Antarctica", "velocity": 14.8, "altitude": 28, "status": "tracked"}
+  ],
+  "alerts": [
+    {"type": "ungrouped", "severity": "medium", "message": "Ungrouped meteorite detected"},
+    {"type": "fireball", "severity": "high", "message": "Large fireball event"}
+  ],
+  "progress": {
+    "total_specimens": 2847,
+    "classified_today": 12,
+    "backlog": 15234
+  }
+}

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use METEORICA in your research, please cite it as below."
+title: "Celestial Messengers: A Comprehensive Physico-Chemical Framework for the Classification, Terrestrial Interaction, and Cosmochemical Significance of Extraterrestrial Materials"
+authors:
+  - family-names: "Baladi"
+    given-names: "Samir"
+    email: "gitdeeper@gmail.com"
+    orcid: "https://orcid.org/0009-0003-8903-0029"
+    affiliation: "Ronin Institute / Rite of Renaissance - Extraterrestrial Materials & Cosmochemistry Division"
+version: 1.0.0
+doi: 10.14293/METEORICA.2026.001
+date-released: 2026-03
+repository-code: "https://gitlab.com/gitdeeper07/meteorica"
+url: "https://meteorica-science.netlify.app"
+license: "MIT"
+keywords:
+  - "meteoritics"
+  - "cosmochemistry"
+  - "chondrites"
+  - "achondrites"
+  - "iron meteorites"
+  - "isotope geochemistry"
+  - "planetary science"
+  - "AI classification"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Baladi"
+      given-names: "Samir"
+  title: "Celestial Messengers: A Comprehensive Physico-Chemical Framework for the Classification, Terrestrial Interaction, and Cosmochemical Significance of Extraterrestrial Materials"
+  journal: "Meteoritics & Planetary Science"
+  publisher: "Wiley-Blackwell"
+  year: 2026
+  doi: 10.14293/METEORICA.2026.001
