@@ -423,10 +423,11 @@ git push origin feature/your-feature-name
 
 ---
 
-## 👤 Author
+## Principal Investigator
 
- **Samir Baladi** - *Interdisciplinary AI Researcher, Framework design, Software development, Analysis*
+- **Samir Baladi** - *Interdisciplinary AI Researcher, Framework design, Software development, Analysis*
   - Email: gitdeeper@gmail.com
+  - Contact: : +16142642074
   - ORCID: 0009-0003-8903-0029
   - Role : Interdisciplinary AI Researcher
   - Affiliation: Ronin Institute / Rite of Renaissance - Extraterrestrial Materials & Cosmochemistry Division
