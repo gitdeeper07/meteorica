@@ -461,10 +461,6 @@ CNN model weights are available for academic use under the same terms.
 [📚 Docs](https://meteorica-science.netlify.app/documentation) &nbsp;·&nbsp;
 [📑 Reports](https://meteorica-science.netlify.app/reports)
 
-<br>
-
-`v1.0.0` &nbsp;·&nbsp; MIT License &nbsp;·&nbsp; DOI: [10.14293/METEORICA.2026.001](https://doi.org/10.14293/METEORICA.2026.001) &nbsp;·&nbsp; ORCID: [0009-0003-8903-0029](https://orcid.org/0009-0003-8903-0029)
-
-<br>
+---
 
 </div>
