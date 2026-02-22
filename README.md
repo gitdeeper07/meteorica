@@ -425,11 +425,11 @@ git push origin feature/your-feature-name
 
 ## 👤 Author
 
-**Samir Baladi** — Interdisciplinary Researcher  
-Ronin Institute / Rite of Renaissance · Extraterrestrial Materials & Cosmochemistry
-
-[gitdeeper@gmail.com](mailto:gitdeeper@gmail.com); 
-ORCID: [0009-0003-8903-0029](https://orcid.org/0009-0003-8903-0029)
+ **Samir Baladi** - *Interdisciplinary AI Researcher, Framework design, Software development, Analysis*
+  - Email: gitdeeper@gmail.com
+  - ORCID: 0009-0003-8903-0029
+  - Role : Interdisciplinary AI Researcher
+  - Affiliation: Ronin Institute / Rite of Renaissance - Extraterrestrial Materials & Cosmochemistry Division
 
 ---
 
